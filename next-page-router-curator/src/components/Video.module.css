@@ -1,0 +1,6 @@
+.video-player {
+    align-self: center;
+    height: 240px;
+    position: relative;    
+    width: 320px; 
+}
