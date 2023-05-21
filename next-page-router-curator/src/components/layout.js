@@ -1,19 +1,16 @@
+import Header from './Header';
+import Footer from "./Footer";
+
 function Layout({ children }) {
     return(
         <>
-            <header>
-                <nav>
-                    this is the navigation section
-                </nav>
-            </header>
+            <Header />
 
             <main>
                 {children}
             </main>
             
-            <footer>
-                (c) 2023 Martin Alvarez
-            </footer>
+            <Footer />
         </>
     );
 }
