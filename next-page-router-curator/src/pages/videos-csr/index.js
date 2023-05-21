@@ -1,14 +1,17 @@
 import { getAllVideos } from "@/models/videos";
 import VideoThumbnail from "@/components/VideoThumbnail";
+import Link from "next/link";
 
 function VideosCSR({ videos }) {
     return(
         <>
-            <h1>Videos Page</h1>
+            <h1>Videos</h1>
 
             {videos.map(({ videoId }) => {
                 return (
-                    <VideoThumbnail key={videoId} videoId={videoId} />
+                    <Link key={videoId} href={`/video-csr/${videoId}`}>
+                        <VideoThumbnail videoId={videoId} />
+                    </Link>
                 );
             })}
         </>
