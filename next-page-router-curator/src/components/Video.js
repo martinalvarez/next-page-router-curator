@@ -2,7 +2,7 @@ import styles from './Video.module.css';
 
 function Video({videoId}) {
     return(
-        <div className={styles.video-player}>
+        <div className={styles.videoPlayer}>
             <iframe
                 width="100%"
                 height="100%"    
