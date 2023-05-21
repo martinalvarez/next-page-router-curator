@@ -8,7 +8,7 @@ function Video() {
 
     return(
         <>
-            <h1>Video Page</h1>
+            <h1>Video</h1>
             
             <VideoComponent videoId={videoId} />
         </>
