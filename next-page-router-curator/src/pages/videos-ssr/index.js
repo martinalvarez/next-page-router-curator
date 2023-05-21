@@ -1,8 +1,7 @@
 import { getAllVideos } from "@/models/videos";
 import VideoThumbnail from "@/components/VideoThumbnail";
 
-function Videos() {
-    const videos = getAllVideos();
+function VideosSSR({ videos }) {
     return(
         <>
             <h1>Videos Page</h1>
@@ -16,4 +15,13 @@ function Videos() {
     );
 }
 
-export default Videos;
+export function getServerSideProps() {
+    const videos = getAllVideos();
+    return {
+        props: {
+            videos,
+        }
+    }
+}
+
+export default VideosSSR;

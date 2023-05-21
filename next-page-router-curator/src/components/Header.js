@@ -14,8 +14,18 @@ const menu = [
         label: 'Videos',
     },        
     {
-        href: '/about',
+        href: '/videos-ssr',        
         id: 3,
+        label: 'Videos (getServerSideProps)',
+    },       
+    {
+        href: '/videos-csr',        
+        id: 4,
+        label: 'Videos (getStaticProps)',
+    },           
+    {
+        href: '/about',
+        id: 5,
         label: 'About',
     },        
 ];
