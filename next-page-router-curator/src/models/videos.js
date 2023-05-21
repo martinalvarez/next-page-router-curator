@@ -40,3 +40,17 @@ const videos = [
 export function getAllVideos() {
     return videos;
 }
+
+export function asyncGetAllVideos() {
+    const random = Math.floor(Math.random() * 2000);
+    
+    return new Promise((resolve, reject) => {
+        setTimeout(function() {
+            if (random % 2 === 0) {
+                resolve(videos);
+            } else {
+                reject([]);
+            }
+        }, 2000);
+    })
+}
