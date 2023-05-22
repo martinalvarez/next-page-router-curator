@@ -37,7 +37,7 @@ function Videos() {
 
             {loading ? 
                 <Loading /> : 
-                    error ? <Error /> :
+                    error ? <Error>This is a random error to test when videos API fails, please try again.</Error> :
                         videos.map(({ videoId }) => {
                             return (
                             <Link key={videoId} href={`/video/${videoId}`}>

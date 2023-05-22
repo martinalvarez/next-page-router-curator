@@ -49,8 +49,8 @@ export function asyncGetAllVideos() {
             if (random % 2 === 0) {
                 resolve(videos);
             } else {
-                reject([]);
+                reject('Error getting videos');
             }
-        }, 2000);
+        }, 1000);
     })
 }

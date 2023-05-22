@@ -1,3 +1,32 @@
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
 body {
   background-color: lightgray;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 10rem;  
+  position: sticky;  
+}
+
+header a {
+  color: white;
+}
+
+main {
+  height: 80vh;
 }

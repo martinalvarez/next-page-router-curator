@@ -1,7 +1,7 @@
-function Error() {
+function Error({ children }) {
     return (
         <>
-            Ups...an error ocurred...
+            {children}
         </>
     );
 }
